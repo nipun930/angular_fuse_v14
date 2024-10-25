@@ -9,7 +9,7 @@ export class SidebarComponent implements OnInit {
 
   constructor() { }
   // pushing only commit to origin 
-  // pushing change from dev to origin dev
+  // pushing change from dev to origin dev  
   sideMenuLinks = [
     {
       name: 'Dashboard',
