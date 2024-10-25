@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   constructor() { }
+  // pushing only commit to origin 
   sideMenuLinks = [
     {
       name: 'Dashboard',
