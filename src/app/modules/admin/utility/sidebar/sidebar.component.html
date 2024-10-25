@@ -1,0 +1,7 @@
+<div class="sidebar">
+    <div class="link pointer-event" *ngFor="let el of sideMenuLinks">
+        <a class="" [routerLink]="el.link">
+            {{el.name}}
+        </a>
+    </div>
+</div>
