@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,7 +12,16 @@ export class HeaderComponent implements OnInit {
     private router: Router
   ) { }
 
+  userOptionCss = "floating-profile-options d-none";
+
+  @ViewChild('profileOptions') profileOptions: ElementRef;
+
   ngOnInit(): void {
+  }
+
+  toggleProfileOptions(){
+    console.log(this.profileOptions.nativeElement.style);
+    this.userOptionCss = (this.userOptionCss=="floating-profile-options")?"floating-profile-options d-none":"floating-profile-options";
   }
 
   logout(){
